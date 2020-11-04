@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nuevoAlumnoActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/txtnuevoAlumno"
+        android:layout_width="236dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:text="Nuevo Alumno"
+        android:textSize="25dp"
+        android:textColor="@color/purple_700"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_below="@+id/txtnuevoAlumno"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         >
+
+        <EditText
+            android:id="@+id/etxt_nombre"
+            android:layout_width="325dp"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/textlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/textlayout1"
+        >
+
+        <EditText
+            android:id="@+id/etxt_apellido"
+            android:layout_width="325dp"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/textlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Direccion"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/textlayout2"
+        >
+
+        <EditText
+            android:inputType="textPostalAddress"
+            android:id="@+id/etxt_direccion"
+            android:layout_width="325dp"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/textlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="telefono"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/textlayout3"
+        >
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/etxt_telefono"
+            android:layout_width="325dp"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout4"
+        android:text="Guardar"
+        android:onClick="onClick"
+        android:textColor="?attr/colorPrimaryDark"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+    <Button
+        android:id="@+id/btn2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout4"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/btn1"
+        android:onClick="onClick"
+        android:text="Ver Alumnos"
+        android:textColor="?attr/colorPrimaryDark" />
+
+
+</RelativeLayout>

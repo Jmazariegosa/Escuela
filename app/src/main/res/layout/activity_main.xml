@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:text="La Escuelita"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    tools:ignore="OnClick">
+
+                    <ImageView
+                        android:src="@drawable/add"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:text="Alumno"></TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/libro"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:text="Curso"></TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin3"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/smartphone"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:text="Inscripciones"></TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin4"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/check_list"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:text="Alumnos inscritos"></TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>

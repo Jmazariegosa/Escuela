@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nuevoAlumnoActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/txtnuevoGrado"
+        android:layout_width="236dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:text="Nuevo Grado"
+        android:textSize="25dp"
+        android:textColor="@color/purple_700"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Grado"
+        android:layout_below="@+id/txtnuevoGrado"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <EditText
+            android:id="@+id/etxt_grado"
+            android:layout_width="325dp"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout1"
+        android:text="Guardar"
+        android:onClick="onClick"
+        android:textColor="?attr/colorPrimaryDark"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+
+    <Button
+        android:id="@+id/btn2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout1"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/btn1"
+        android:onClick="onClick"
+        android:text="Ver Grados"
+        android:textColor="?attr/colorPrimaryDark" />
+</RelativeLayout>
